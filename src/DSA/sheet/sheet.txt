@@ -1,0 +1,25 @@
+🕒 Daily Schedule (4 hours: 6:00 PM – 10:30 PM)
+Time	Activity	Focus Area
+6:00 – 6:30 PM	📖 Learn Concept (30 min)	New DSA topic from roadmap
+6:30 – 7:30 PM	💻 Code Examples (1 hour)	Implement the concept with sample code
+7:30 – 8:30 PM	🧠 Solve 3–4 Easy/Medium Problems	Practice on LeetCode / GFG / CodeStudio
+8:30 – 9:00 PM	🍽️ Dinner/Break	Short break
+9:00 – 10:00 PM	🔁 Revision + New Problem Solving	Revisit old problems + 2 new ones
+10:00 – 10:30 PM	📓 Notes + Mark Mistakes	Update notebook / Google Sheet
+
+
+
+✅ Weekly Plan Integration (Updated to match 4hr/day)
+Week	Topics Covered	No. of Problems
+1	Arrays, Strings, Time Complexity	25–30 problems
+2	Recursion, Sorting, Basic Math	25–30 problems
+3	Searching, Two Pointers, Sliding Window	30+ problems
+4	Hashing, Prefix Sums, Bit Manipulation (Optional)	30+ problems
+5	Stack, Queue, LinkedList	35+ problems
+6	Trees & BSTs	30+ problems
+7	Heap, Trie (Optional), Graphs Basics	30+ problems
+8	Graph Advanced (DFS, BFS, Union-Find)	25–30 problems
+9	Greedy, Backtracking	25–30 problems
+10	Dynamic Programming (Beginner to Medium)	30–40 problems
+11	Mixed Practice: Medium + Mock Interviews	50+ problems
+12	Final Revision + Timed Contests	40–50 problems

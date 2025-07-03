@@ -1,0 +1,311 @@
+🗓️ Month 1: Basics of Programming + Arrays + Math
+Week 1: Programming Basics
+
+    Loops, Conditionals
+
+    Recursion basics
+
+    Time & Space Complexity (Big O)
+
+    Practice: 20 basic problems on loops, patterns, recursion
+
+
+    | Day | Topics                              | Tasks                            |
+    | --- | ----------------------------------- | -------------------------------- |
+    | 1   | Input/Output, Variables, Data Types | Practice 5 basic I/O problems    |
+    | 2   | Operators & Conditionals            | Practice 5 problems              |
+    | 3   | Loops (for, while)                  | 10 problems incl. pattern prints |
+    | 4   | Functions/Methods                   | Write 5 problems using functions |
+    | 5   | Arrays (Intro)                      | Sum, max, linear search          |
+    | 6   | Practice Day                        | Solve 8–10 problems              |
+    | 7   | Revise + Mock Test                  | 1 mock quiz + revise concepts    |
+
+
+Week 2: Arrays
+
+    Linear Search, Binary Search
+
+    Prefix Sum, Sliding Window
+
+    Practice: Easy-medium array problems on LeetCode/GFG
+
+    | Problem                              | Technique             | Platform       |
+    | ------------------------------------ | --------------------- | -------------- |
+    | Find max/min element                 | Basic Traversal       | GFG / LeetCode |
+    | Reverse an array                     | Two pointers          | LeetCode       |
+    | Check if array is sorted             | Loop                  | GFG            |
+    | Second largest element               | Loop logic            | GFG            |
+    | Kth largest/smallest                 | Sorting or heap       | LeetCode       |
+    | Move zeros to end                    | Two pointers          | LeetCode       |
+    | Left rotate array by 1 / k positions | Loop + extra space    | GFG            |
+    | Leaders in an array                  | Reverse + max so far  | GFG            |
+    | Longest subarray with sum K          | Prefix sum + map      | GFG / LeetCode |
+    | Binary search                        | Classic               | LeetCode Easy  |
+    | Search in rotated sorted array       | Binary Search Variant | LeetCode       |
+    | Count pairs with a given sum         | Hashing               | LeetCode       |
+| Day | Topics                      | Practice Problems                       |
+| --- | --------------------------- | --------------------------------------- |
+| 1   | Array Basics + Traversals   | Reverse, Max/Min, Sorted check          |
+| 2   | Frequency Count + Searching | Count elements, Linear Search           |
+| 3   | Prefix Sum                  | Range sum, Subarray with sum K          |
+| 4   | Sliding Window              | Max subarray sum of size K              |
+| 5   | Binary Search + Variants    | Standard BS, First/Last Occurrence      |
+| 6   | Two Pointer Approach        | Pair sum, Remove duplicates, Move Zeros |
+| 7   | Mock + Revision Day         | Solve 5 mixed problems from LeetCode    |
+
+
+Week 3: Math + Bit Manipulation
+
+    GCD, LCM, Prime Numbers, Sieve of Eratosthenes
+
+    Bitwise operators, set/unset bits, XOR trick
+
+    Practice: Number theory & bit questions
+
+    | Problem                                         | Concept                | Platform     |
+    | ----------------------------------------------- | ---------------------- | ------------ |
+    | Count digits in a number                        | Math                   | GFG          |
+    | Reverse digits of a number                      | Math                   | LeetCode     |
+    | GCD and LCM                                     | Euclidean Algorithm    | GFG          |
+    | Check if number is prime                        | Basic + optimization   | LeetCode/GFG |
+    | Sieve of Eratosthenes                           | Prime generation       | GFG          |
+    | Find all divisors of a number                   | Loop till √n           | GFG          |
+    | Check if number is power of 2                   | Bitwise check          | LeetCode     |
+    | Count set bits                                  | Brian Kernighan’s Algo | GFG          |
+    | XOR of array / Find single non-repeating number | XOR trick              | LeetCode     |
+    | Add 1 to an integer without `+`                 | Bit Manipulation       | GFG          |
+    | Swap two numbers using XOR                      | Bitwise operation      | GFG          |
+    | Find ith bit of a number                        | Bit mask               | Any          |
+
+ | Day | Topics                               | Practice Problems                                  |
+ | --- | ------------------------------------ | -------------------------------------------------- |
+ | 1   | Count digits, Reverse, Sum of digits | 5 basic math problems                              |
+ | 2   | Prime check, GCD, LCM                | 5–6 number theory problems                         |
+ | 3   | Sieve of Eratosthenes, Divisors      | Sieve + divisor problems (2-3 variations)          |
+ | 4   | Modulo Arithmetic                    | Modulo sum/product with big numbers                |
+ | 5   | Bitwise Operators Basics             | Count set bits, even/odd, XOR of array             |
+ | 6   | Bit Tricks                           | ith bit, set/clear bit, check power of 2           |
+ | 7   | Revision + Mock Day                  | Solve 6 mixed problems + 1 timed quiz or mock test |
+
+
+Week 4: 2D Arrays + Sorting
+
+    Bubble, Insertion, Merge, Quick Sort
+
+    2D matrix problems (spiral, search, rotate, transpose)
+
+    Practice: LeetCode Medium level sorting problems
+
+    | Problem                                            | Topic                    | Platform     |
+    | -------------------------------------------------- | ------------------------ | ------------ |
+    | Transpose of matrix                                | 2D Array                 | GFG          |
+    | Rotate matrix 90 degrees clockwise                 | 2D Array                 | LeetCode     |
+    | Spiral order traversal                             | 2D Array                 | LeetCode     |
+    | Search in a row-column sorted matrix               | 2D Array + Binary Search | LeetCode     |
+    | Bubble, Selection, Insertion sort (write manually) | Sorting basics           | Any          |
+    | Merge Sort, Quick Sort                             | Sorting                  | LeetCode/GFG |
+    | Sort array of 0s, 1s, 2s                           | Dutch National Flag      | LeetCode #75 |
+    | Merge two sorted arrays                            | Two Pointers             | LeetCode     |
+    | Kth smallest/largest element                       | Sorting or Heap          | GFG/LeetCode |
+    | Sort by frequency                                  | HashMap + Sorting        | LeetCode     |
+
+| Day | Topics                             | Practice Focus                                 |
+| --- | ---------------------------------- | ---------------------------------------------- |
+| 1   | 2D Array basics                    | Input/output, transpose, traversal             |
+| 2   | Matrix Rotation + Spiral Traversal | 90°, 180°, spiral traversal                    |
+| 3   | Matrix Search                      | Row-wise, binary search in matrix              |
+| 4   | Bubble, Insertion, Selection sort  | Write code manually, compare time complexities |
+| 5   | Merge Sort + Quick Sort            | Implement & dry-run with diagrams              |
+| 6   | Dutch Flag, Kth smallest, Merge    | Sorting-based problems (harder)                |
+| 7   | Revise + Mixed Problems            | Solve 5+ mixed problems + 1 timed contest      |
+
+
+🗓️ Month 2: Strings, Hashing & Sliding Window
+Week 5: Strings
+
+    String manipulation, Palindromes, Substrings
+
+    KMP, Rabin Karp (Pattern Matching)
+
+    Practice: 15+ string problems
+
+    | Problem                                        | Platform    |
+    | ---------------------------------------------- | ----------- |
+    | Reverse string / string builder usage          | LeetCode    |
+    | Check if palindrome                            | LeetCode    |
+    | Longest common prefix                          | LeetCode    |
+    | String compression (RLE)                       | LeetCode    |
+    | Anagram check                                  | GFG         |
+    | Longest substring without repeating characters | LeetCode #3 |
+    | Implement strStr() (KMP algorithm)             | LeetCode    |
+
+
+Week 6: Hashing & Maps
+
+    HashSet, HashMap (or dict in Python)
+
+    Frequency counts, Grouping, Anagrams
+
+    Practice: Easy to Medium level hashing problems
+
+    | Problem                      | Platform     |
+    | ---------------------------- | ------------ |
+    | Two sum                      | LeetCode #1  |
+    | Longest consecutive sequence | LeetCode     |
+    | Group anagrams               | LeetCode     |
+    | Top K frequent elements      | LeetCode     |
+    | Subarray sum equals K        | LeetCode     |
+    | Check for duplicates         | GFG/LeetCode |
+
+
+Week 7: Sliding Window + Two Pointers
+
+    Longest substring, Max sum subarray
+
+    Practice: LeetCode sliding window problems
+
+    | Problem                                        | Technique       | Platform |
+    | ---------------------------------------------- | --------------- | -------- |
+    | Max sum subarray of size K                     | Sliding Window  | GFG      |
+    | Longest substring without repeating characters | Variable Window | LeetCode |
+    | Minimum window substring                       | Hard            | LeetCode |
+    | Count anagrams in a string                     | Sliding Window  | GFG      |
+    | Remove duplicates from sorted array            | Two Pointer     | LeetCode |
+    | Container with most water                      | Two Pointer     | LeetCode |
+    | 3Sum                                           | Two Pointer     | LeetCode |
+
+
+Week 8: Recap + Mock Test Week
+    Revise key topics
+    Take 2 full-length contests or mock interviews
+
+
+
+🗓️ Month 3: Recursion + Backtracking + Linked List
+Week 9: Recursion Deep Dive
+
+    Recursion tree, Subset, Permutation, Sum problems
+
+    Practice: 8–10 backtracking/recursion problems
+
+Week 10: Backtracking
+
+    N-Queens, Sudoku Solver, Word Search
+
+    Practice: Classic problems (must do)
+
+Week 11: Linked List
+
+    Reverse LL, Detect cycle, Merge, Middle element
+
+    Doubly & Circular Linked List
+
+    Practice: 10–12 LL problems
+
+Week 12: Mock + Revision
+
+    Solve 2 timed contests + 20 mixed topic questions
+
+🗓️ Month 4: Stack, Queue, Sliding Window, Trees
+Week 13: Stack & Queue
+
+    Stack using array/LL, Next Greater Element
+
+    Queue, Deque, Monotonic Queue
+
+    Practice: 10+ stack/queue problems
+
+Week 14: Trees – Basics
+
+    Binary Tree basics (inorder, preorder, postorder)
+
+    Level order, Diameter, Height
+
+    Practice: 10 tree problems
+
+Week 15: Trees – Advanced
+
+    Binary Search Tree (BST)
+
+    LCA, Kth smallest/largest, BST validate
+
+    Practice: Medium LeetCode tree problems
+
+Week 16: Heap + Priority Queue
+
+    MinHeap, MaxHeap, Top K elements
+
+    Practice: Top K frequent, Merge k sorted lists
+
+🗓️ Month 5: Graphs + Trie
+Week 17: Graph Basics
+
+    BFS, DFS, Adjacency Matrix/List
+
+    Practice: 10 BFS/DFS problems
+
+Week 18: Graph Advanced
+
+    Topological sort, Cycle detection, Union-Find (DSU)
+
+    Practice: Graph questions from GFG & LeetCode
+
+Week 19: Tries
+
+    Insert, Search, Prefix
+
+    Auto-complete, Word Dictionary
+
+    Practice: LeetCode trie problems
+
+Week 20: Mock + Contest Week
+
+    Give 2 full mock contests + revise weak topics
+
+🗓️ Month 6: Dynamic Programming + Revision + Mock Interviews
+Week 21: DP Basics
+
+    0/1 Knapsack, Fibonacci, Subset Sum
+
+    Memoization, Tabulation
+
+    Practice: Easy to medium DP problems
+
+Week 22: DP Advanced
+
+    LCS, LIS, Edit Distance, DP on grids
+
+    Practice: 10+ Medium to Hard DP problems
+
+Week 23: Systematic Revision
+
+    Go over notes + weak areas
+
+    Focus on mock interviews on platforms like:
+
+        InterviewBit, Pramp, or friends
+
+Week 24: Final Week
+
+    Full-length contests
+
+    Resume + project review (if prepping for job)
+
+    Stay calm and revise key DSA formulas/notes
+
+✨ Tips for Success:
+
+    🧠 Daily Practice: Even 2-3 questions/day builds up over time
+
+    ⏱️ Timebox: Don’t overthink 1 problem — move to solution if stuck >30 mins
+
+    ✅ Consistency > Intensity
+
+    📚 Resources:
+
+        Book: "DSA Made Easy" by Yashavant Kanetkar (India)
+
+        Playlist: Striver's DSA Sheet
+
+        LeetCode: Explore > DSA Track
+
