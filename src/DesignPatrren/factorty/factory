@@ -1,0 +1,88 @@
+public interface NotificationService {
+    void send(String message);
+}
+
+2. Concrete Products with Named Beans
+
+@Component("email")
+public class EmailNotificationService implements NotificationService {
+    @Override
+    public void send(String message) {
+        System.out.println("Email sent: " + message);
+    }
+}
+
+@Component("sms")
+public class SmsNotificationService implements NotificationService {
+    @Override
+    public void send(String message) {
+        System.out.println("SMS sent: " + message);
+    }
+}
+
+@Component("push")
+public class PushNotificationService implements NotificationService {
+    @Override
+    public void send(String message) {
+        System.out.println("Push notification sent: " + message);
+    }
+}
+
+3. Factory with Smart Mapping
+
+@Component
+public class NotificationFactory {
+
+    private final Map<String, NotificationService> serviceMap;
+
+    @Autowired
+    public NotificationFactory(Map<String, NotificationService> serviceMap) {
+        this.serviceMap = serviceMap;
+    }
+
+    public NotificationService getNotificationService(String type) {
+        return serviceMap.getOrDefault(type.toLowerCase(), serviceMap.get("email"));
+    }
+}
+
+    💡 Map<String, NotificationService> automatically maps based on @Component("key") values.
+
+4. Client Service
+
+@Service
+public class NotificationManager {
+
+    private final NotificationFactory factory;
+
+    public NotificationManager(NotificationFactory factory) {
+        this.factory = factory;
+    }
+
+    public void notifyUser(String type, String message) {
+        NotificationService service = factory.getNotificationService(type);
+        service.send(message);
+    }
+}
+
+5. Spring Controller
+
+@RestController
+@RequestMapping("/notify")
+public class NotificationController {
+
+    private final NotificationManager manager;
+
+    public NotificationController(NotificationManager manager) {
+        this.manager = manager;
+    }
+
+    @PostMapping
+    public ResponseEntity<String> notify(
+            @RequestParam String type,
+            @RequestParam String message) {
+
+        manager.notifyUser(type, message);
+        return ResponseEntity.ok("Sent using: " + type);
+    }
+}
+

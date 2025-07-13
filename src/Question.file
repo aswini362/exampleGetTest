@@ -4,3 +4,46 @@
 4)Corn expression ??
 5)how you build custom logic in acuator??
 6)how to work spring security with jwt and password logic stored in data base its also ensures that password cant be see deveolper and how
+7)how to download file from url
+8)how to check file exist or not??
+9)Rest api design principal ??
+10)security filter chain?
+11)Security config??
+
+12)Can we implement dynamic polymorphism with instance variables or data members
+
+13) Asked at Agoda - Streams & Multithreading | Find Nth Word Frequencies From Files
+14)Asked in Myntra | Find Nth Highest Salary Using Java Streams API
+
+[1,2,3,4,5,6,7,8,9,10]
+
+[[1,2],[3,4,5],[6,7],[8,9,10]]
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class GroupingExample {
+    public static void main(String[] args) {
+        List<Integer> input = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        List<List<Integer>> output = groupAlternating(input);
+        System.out.println(output);
+    }
+
+    public static List<List<Integer>> groupAlternating(List<Integer> input) {
+        List<List<Integer>> result = new ArrayList<>();
+        int i = 0;
+        int sizeToggle = 2; // Start with group size 2
+
+        while (i < input.size()) {
+            int end = Math.min(i + sizeToggle, input.size());
+            result.add(new ArrayList<>(input.subList(i, end)));
+            i = end;
+            // Toggle between 2 and 3
+            sizeToggle = (sizeToggle == 2) ? 3 : 2;
+        }
+
+        return result;
+    }
+}
