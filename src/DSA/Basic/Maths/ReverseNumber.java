@@ -13,16 +13,25 @@ package DSA.Basic.Maths;
 public class ReverseNumber {
 
     public static void main(String[] args){
+     System.out.println(rev(-123));
+     System.out.println(rev(123));
 
-        int rev=0;
-        int num=123;
-        //out put 321
-        while (num>0){
-            int lastDigits = num % 10;
-            rev=(rev*10)+lastDigits;
-            num=num/10;
+    }
+
+    public static int rev(int x){
+        long rev=0;
+        int sign=x<0 ?-1:1;
+        x=Math.abs(x);
+        while (x>0){
+            int lastDigits=x%10;
+            rev=rev*10+lastDigits;
+            x=x/10;
         }
-        System.out.println(rev);
+        rev*=sign;
+        if(rev<Integer.MIN_VALUE || rev>Integer.MAX_VALUE){
+            return 0;
+        }
+        return (int)rev;
     }
 
 }
