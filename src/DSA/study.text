@@ -301,11 +301,76 @@ Week 24: Final Week
 
     ✅ Consistency > Intensity
 
-    📚 Resources:
+week 1 GOAL
 
-        Book: "DSA Made Easy" by Yashavant Kanetkar (India)
+🔁 Overall Goal
 
-        Playlist: Striver's DSA Sheet
+    Revise: Basic Math, Time Complexity, Sorting
 
-        LeetCode: Explore > DSA Track
+    Practice: Implement + dry run
+
+    Prepare for next week: Arrays
+
+🗓️ Saturday (Total: 8 hours)
+⏰ Morning Session (3 hours – 6:30 AM to 9:30 AM)
+
+→ Revision + Practice
+
+    ⏱ Time Complexity: O(1), O(N), O(N²), logN (Theory + dry run)
+
+    📌 Practice: 5 problems involving time complexity analysis
+
+    ✅ Revise basic math: divisors, palindrome, Armstrong, reverse, digit count, GCD
+
+⏰ Midday Session (2.5 hours – 10:00 AM to 12:30 PM)
+
+→ Sorting Algorithms – Final Pass
+
+    Revise + implement from scratch:
+
+        ✅ Bubble Sort
+
+        ✅ Selection Sort
+
+        ✅ Insertion Sort
+
+⏰ Evening Session (2.5 hours – 5:30 PM to 8:00 PM)
+
+→ Advanced Sorting
+
+    ✅ Merge Sort – dry run + in-place
+
+    ✅ Quick Sort – dry run + in-place
+
+    🔍 Understand partition logic clearly
+
+🗓️ Sunday (Total: 7 hours)
+⏰ Morning Session (3 hours – 6:30 AM to 9:30 AM)
+
+→ Full Sorting Revision
+
+    📋 One-page summary notes of all 5 sorts
+
+    ✅ Dry run on paper for each algorithm
+
+    🧠 Solve 4–5 sorting problems from LeetCode
+
+⏰ Midday Session (2 hours – 11:00 AM to 1:00 PM)
+
+→ Start Arrays (Prep for Next Week)
+
+    ✅ Theory: definition, types, space/time usage
+
+    ✅ Practice: array traversal, insert/delete, max/min element
+
+⏰ Evening Session (2 hours – 5:30 PM to 7:30 PM)
+
+→ Problem Solving: Mixed
+
+    4 problems:
+
+        2 based on sorting + math
+
+        2 array-based starter problems
+
 

@@ -1,0 +1,301 @@
+# 6-Month DSA Roadmap - Difficulty-wise Problem Distribution
+
+## Month 1: Foundation & Basic Problem Solving
+
+### Week 1-2: Arrays & Strings
+**Basic (8-10 problems)**
+- Find maximum element in array
+- Reverse an array
+- Check if array is sorted
+- Find second largest element
+- Remove duplicates from sorted array
+- Check if string is palindrome
+- Count vowels and consonants
+- Reverse words in a string
+
+**Easy (7-8 problems)**
+- Two Sum (LeetCode #1)
+- Best Time to Buy and Sell Stock (LeetCode #121)
+- Maximum Subarray (LeetCode #53)
+- Valid Palindrome (LeetCode #125)
+- Longest Common Prefix (LeetCode #14)
+- Remove Element (LeetCode #27)
+- Plus One (LeetCode #66)
+
+**Medium (2-3 problems)**
+- Container With Most Water (LeetCode #11)
+- Longest Substring Without Repeating Characters (LeetCode #3)
+
+### Week 3-4: Time Complexity & Sorting
+**Basic (6-8 problems)**
+- Implement bubble sort
+- Implement selection sort
+- Implement insertion sort
+- Linear search implementation
+- Find time complexity of given code
+- Basic binary search
+
+**Easy (5-6 problems)**
+- Search Insert Position (LeetCode #35)
+- First Bad Version (LeetCode #278)
+- Sqrt(x) (LeetCode #69)
+- Valid Perfect Square (LeetCode #367)
+- Merge Sorted Array (LeetCode #88)
+
+**Medium (3-4 problems)**
+- Find First and Last Position of Element (LeetCode #34)
+- Search in Rotated Sorted Array (LeetCode #33)
+- Sort Colors (LeetCode #75)
+
+---
+
+## Month 2: Linear Data Structures
+
+### Week 1-2: Linked Lists
+**Basic (8-10 problems)**
+- Create and traverse linked list
+- Insert at beginning, end, middle
+- Delete node by value/position
+- Find length of linked list
+- Search element in linked list
+- Reverse a linked list (iterative)
+
+**Easy (8-10 problems)**
+- Remove Duplicates from Sorted List (LeetCode #83)
+- Merge Two Sorted Lists (LeetCode #21)
+- Linked List Cycle (LeetCode #141)
+- Remove Linked List Elements (LeetCode #203)
+- Middle of the Linked List (LeetCode #876)
+- Palindrome Linked List (LeetCode #234)
+
+**Medium (4-5 problems)**
+- Add Two Numbers (LeetCode #2)
+- Remove Nth Node From End (LeetCode #19)
+- Linked List Cycle II (LeetCode #142)
+- Reverse Linked List II (LeetCode #92)
+
+### Week 3-4: Stacks & Queues
+**Basic (6-8 problems)**
+- Implement stack using array
+- Implement queue using array
+- Check balanced parentheses
+- Implement stack using linked list
+- Basic calculator operations
+
+**Easy (8-10 problems)**
+- Valid Parentheses (LeetCode #20)
+- Implement Queue using Stacks (LeetCode #232)
+- Implement Stack using Queues (LeetCode #225)
+- Min Stack (LeetCode #155)
+- Remove All Adjacent Duplicates (LeetCode #1047)
+
+**Medium (4-5 problems)**
+- Evaluate Reverse Polish Notation (LeetCode #150)
+- Daily Temperatures (LeetCode #739)
+- Next Greater Element II (LeetCode #503)
+- Asteroid Collision (LeetCode #735)
+
+---
+
+## Month 3: Recursion & Backtracking
+
+### Week 1-2: Recursion Fundamentals
+**Basic (8-10 problems)**
+- Factorial calculation
+- Fibonacci sequence
+- Sum of digits
+- Power calculation (x^n)
+- Print numbers 1 to n
+- Count digits in number
+- GCD calculation
+- Tower of Hanoi (3 disks)
+
+**Easy (5-6 problems)**
+- Climbing Stairs (LeetCode #70)
+- Pow(x, n) (LeetCode #50)
+- Generate Parentheses (LeetCode #22)
+- Pascal's Triangle (LeetCode #118)
+
+**Medium (2-3 problems)**
+- Letter Combinations of Phone Number (LeetCode #17)
+- Combination Sum (LeetCode #39)
+
+### Week 3-4: Backtracking
+**Basic (4-5 problems)**
+- Generate all binary strings of length n
+- Print all subsequences of string
+- Basic permutation generation
+- Simple maze solving
+
+**Easy (3-4 problems)**
+- Subsets (LeetCode #78)
+- Permutations (LeetCode #46)
+- Combination Sum II (LeetCode #40)
+
+**Medium (5-6 problems)**
+- N-Queens (LeetCode #51)
+- Sudoku Solver (LeetCode #37)
+- Word Search (LeetCode #79)
+- Palindrome Partitioning (LeetCode #131)
+- Combinations (LeetCode #77)
+
+---
+
+## Month 4: Trees & Graphs
+
+### Week 1-2: Binary Trees
+**Basic (10-12 problems)**
+- Create binary tree
+- Inorder, preorder, postorder traversal
+- Find height of tree
+- Count nodes in tree
+- Find maximum element
+- Check if trees are identical
+- Level order traversal
+
+**Easy (10-12 problems)**
+- Maximum Depth of Binary Tree (LeetCode #104)
+- Same Tree (LeetCode #100)
+- Invert Binary Tree (LeetCode #226)
+- Symmetric Tree (LeetCode #101)
+- Path Sum (LeetCode #112)
+- Binary Tree Level Order Traversal (LeetCode #102)
+- Minimum Depth of Binary Tree (LeetCode #111)
+
+**Medium (5-6 problems)**
+- Binary Tree Zigzag Level Order (LeetCode #103)
+- Construct Binary Tree from Preorder and Inorder (LeetCode #105)
+- Validate Binary Search Tree (LeetCode #98)
+- Lowest Common Ancestor (LeetCode #236)
+
+### Week 3-4: Graph Basics
+**Basic (8-10 problems)**
+- Create adjacency list/matrix
+- BFS implementation
+- DFS implementation
+- Count connected components
+- Check if graph is connected
+- Find path between two nodes
+
+**Easy (6-8 problems)**
+- Number of Islands (LeetCode #200)
+- Clone Graph (LeetCode #133)
+- Find if Path Exists in Graph (LeetCode #1971)
+- All Paths from Source to Target (LeetCode #797)
+
+**Medium (4-5 problems)**
+- Course Schedule (LeetCode #207)
+- Pacific Atlantic Water Flow (LeetCode #417)
+- Surrounded Regions (LeetCode #130)
+- Word Ladder (LeetCode #127)
+
+---
+
+## Month 5: Advanced Topics
+
+### Week 1-2: Dynamic Programming
+**Basic (6-8 problems)**
+- Fibonacci with memoization
+- Climbing stairs variations
+- Min cost climbing stairs
+- House robber (basic)
+- Maximum sum of non-adjacent elements
+
+**Easy (8-10 problems)**
+- Min Cost Climbing Stairs (LeetCode #746)
+- House Robber (LeetCode #198)
+- Maximum Product Subarray (LeetCode #152)
+- Unique Paths (LeetCode #62)
+- Minimum Path Sum (LeetCode #64)
+
+**Medium (8-10 problems)**
+- Longest Increasing Subsequence (LeetCode #300)
+- Coin Change (LeetCode #322)
+- Word Break (LeetCode #139)
+- Longest Common Subsequence (LeetCode #1143)
+- Edit Distance (LeetCode #72)
+- House Robber II (LeetCode #213)
+
+### Week 3-4: Advanced Graph Algorithms
+**Basic (4-5 problems)**
+- Implement Dijkstra's algorithm
+- Implement Floyd-Warshall
+- Basic MST implementation
+- Topological sort (DFS based)
+
+**Easy (4-5 problems)**
+- Find the Town Judge (LeetCode #997)
+- Network Delay Time (LeetCode #743)
+- Cheapest Flights Within K Stops (LeetCode #787)
+
+**Medium (6-8 problems)**
+- Course Schedule II (LeetCode #210)
+- Minimum Spanning Tree problems
+- Shortest Path in Binary Matrix (LeetCode #1091)
+- Critical Connections in Network (LeetCode #1192)
+- Accounts Merge (LeetCode #721)
+
+---
+
+## Month 6: Optimization & Interview Prep
+
+### Week 1-2: Heaps & Advanced Data Structures
+**Basic (6-8 problems)**
+- Implement min heap
+- Implement max heap
+- Basic heap operations
+- Simple trie implementation
+- Basic segment tree operations
+
+**Easy (6-8 problems)**
+- Kth Largest Element in Stream (LeetCode #703)
+- Last Stone Weight (LeetCode #1046)
+- Implement Trie (LeetCode #208)
+- Range Sum Query - Immutable (LeetCode #303)
+
+**Medium (6-8 problems)**
+- Top K Frequent Elements (LeetCode #347)
+- Merge k Sorted Lists (LeetCode #23)
+- Find Median from Data Stream (LeetCode #295)
+- Design Add and Search Words (LeetCode #211)
+- Kth Largest Element in Array (LeetCode #215)
+
+### Week 3-4: Mock Interviews & Mixed Practice
+**Daily Practice Mix:**
+- **Basic**: 1-2 problems (revision)
+- **Easy**: 2-3 problems
+- **Medium**: 2-3 problems
+- **Hard**: 0-1 problems (optional)
+
+**Focus Areas:**
+- Time-bound solving (45 minutes per problem)
+- Explaining approach clearly
+- Optimizing solutions
+- Edge case handling
+- Code quality and readability
+
+---
+
+## Weekly Problem Distribution Summary
+
+| Month | Basic | Easy | Medium | Total |
+|-------|-------|------|--------|-------|
+| 1 | 14-18 | 12-14 | 5-7 | 31-39 |
+| 2 | 14-18 | 16-20 | 8-10 | 38-48 |
+| 3 | 12-15 | 8-10 | 7-9 | 27-34 |
+| 4 | 18-22 | 16-20 | 9-11 | 43-53 |
+| 5 | 10-13 | 12-15 | 14-18 | 36-46 |
+| 6 | 6-8 | 8-11 | 8-11 | 22-30 |
+
+## Problem-Solving Strategy
+
+1. **Basic Problems**: Focus on implementation and understanding concepts
+2. **Easy Problems**: Practice pattern recognition and efficient coding
+3. **Medium Problems**: Work on optimization and complex problem-solving
+4. **Hard Problems**: Attempt only after mastering medium problems
+
+## Recommended Platforms Priority
+1. **LeetCode**: Primary platform for easy/medium problems
+2. **HackerRank**: Good for basic problems and implementation
+3. **CodeChef**: Additional practice for competitive programming
+4. **InterviewBit**: Topic-wise organized problems

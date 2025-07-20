@@ -34,6 +34,9 @@ public class ReverseNumber {
         return (int)rev;
     }
 
+    //happy number
+
+
 }
 
 
