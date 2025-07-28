@@ -1,0 +1,61 @@
+1) divide and conquer
+2)two pointer
+3)In-Place
+4)Kadane's Algorithm
+5)perfix sum with hashmap
+6)sub-arrays
+
+
+✅ Structure: Pattern-Based + Company-Tagged Roadmap (300 Problems)
+🔹 1. Basic Foundations (40 Problems)
+
+    Arrays (Easy–Medium)
+
+    Math (Prime, GCD, Bit Manipulation)
+
+    Hashing
+
+    Sliding Window (Basics)
+
+🔹 2. Intermediate Core Patterns (80 Problems)
+
+    Two Pointers & Fast/Slow Pointer
+
+    Prefix Sum
+
+    Stack/Monotonic Stack
+
+    Binary Search (Standard + on Answer)
+
+    Recursion & Backtracking
+
+🔹 3. Important Data Structures (70 Problems)
+
+    Linked List (Cycle, Reverse, Merge, etc.)
+
+    Heap/Priority Queue
+
+    Queue/Deque (Sliding Window Maximum, etc.)
+
+    Stack-based (Next Greater Element, etc.)
+
+🔹 4. Graphs & Trees (50 Problems)
+
+    Binary Trees (DFS, BFS, Traversals)
+
+    Binary Search Tree
+
+    Trie (Medium)
+
+    Graphs (BFS, DFS, Union Find, Topo Sort)
+
+🔹 5. Dynamic Programming (60 Problems)
+
+    0/1 Knapsack & Subset Sum
+
+    DP on Strings
+
+    DP on Grid
+
+    DP on LIS/Partitions/Palindromes
+

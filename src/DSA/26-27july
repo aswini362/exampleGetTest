@@ -1,0 +1,89 @@
+🔥 20-Hour Weekend DSA Plan: Arrays Focus
+
+🕐 10 hours per day:
+
+    ⏰ Study slots: 3 hrs (morning) + 4 hrs (afternoon) + 3 hrs (evening)
+
+📘 Day 1 – Saturday (Easy + Revision + Java Snippets)
+Time Slot	Activity
+⏰ 5:30 AM – 8:30 AM	Arrays Revision + Easy Problems (5)
+☕ Break (30 min)	
+🔥 9:00 AM – 1:00 PM	Solve 5 more Easy Problems + Discuss Time/Space complexities
+🍽️ Lunch Break (1 hr)	
+🧠 2:00 PM – 5:00 PM	Write Java snippets for patterns (Two pointer, Prefix sum, etc.) and solve 5 more
+🍽️ Break (30 min)	
+✍️ 5:30 PM – 8:30 PM	Solve final 5 Easy problems + Build handwritten notes or Notion page
+✅ Saturday Problems (Easy – 15 total)
+#	Problem	Topic
+1	Max Consecutive Ones	Sliding Window
+2	Squares of a Sorted Array	Two Pointer
+3	Find Numbers with Even Digits	Logic
+4	Move Zeroes	Two Pointer
+5	Check if Sorted and Rotated	Pattern Check
+6	Remove Duplicates from Sorted Array	Two Pointer
+7	Third Maximum Number	Sorting/Greedy
+8	Intersection of Two Arrays II	HashMap
+9	Valid Mountain Array	Pattern
+10	Replace Elements with Greatest on Right Side	Reverse loop
+11	Merge Sorted Array	Merge
+12	Missing Number	Math
+13	Two Sum	Hashing
+14	Contains Duplicate	HashSet
+15	Find Disappeared Numbers	In-place marking
+
+
+📘 Day 2 – Sunday (Easy + Revision + Java Snippets)
+
+| Time Slot                  | Activity                                        |
+| -------------------------- | ----------------------------------------------- |
+| ⏰ **5:30 AM – 8:30 AM**    | Pattern Revision + Solve 3 Medium               |
+| ☕ **Break (30 min)**       |                                                 |
+| 🔥 **9:00 AM – 1:00 PM**   | Solve 4 more Medium + dry run tricky ones       |
+| 🍽️ **Lunch Break (1 hr)** |                                                 |
+| 🧠 **2:00 PM – 5:00 PM**   | Java implementations of key patterns            |
+| 🍽️ **Break (30 min)**     |                                                 |
+| ✍️ **5:30 PM – 8:30 PM**   | Final 3-4 Medium problems + review all concepts |
+
+| #  | Problem                         | Pattern/Topic        |
+| -- | ------------------------------- | -------------------- |
+| 1  | Best Time to Buy and Sell Stock | Min tracking         |
+| 2  | Container With Most Water       | Two Pointer          |
+| 3  | Subarray Sum Equals K           | Prefix Sum + HashMap |
+| 4  | Kadane’s Algo                   | Max Subarray         |
+| 5  | Sort Colors                     | Dutch National Flag  |
+| 6  | Set Matrix Zeroes               | Matrix tricks        |
+| 7  | Majority Element                | Boyer-Moore          |
+| 8  | Rotate Array                    | Reverse array trick  |
+| 9  | Find Duplicate Number           | Floyd's cycle        |
+| 10 | Merge Intervals                 | Sorting              |
+
+
+✅ Bonus Content:
+
+    ✨ Java code templates for:
+
+        Two pointer
+
+        Prefix sum
+
+        HashMap counting
+
+        Array rotation
+
+        Kadane’s
+
+🗒️ Bonus:
+
+If time left, revise:
+
+    Brute force vs optimal
+
+    Time complexity for each
+
+    Create personal Java snippets for:
+
+        Two pointer
+
+        Kadane's
+
+        HashMap frequency map
