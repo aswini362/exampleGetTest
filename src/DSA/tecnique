@@ -10,7 +10,7 @@
 10)https://blog.algomaster.io/t/dsa
 
 
-✅ Structure: Pattern-Based + Company-Tagged Roadmap (300 Problems)
+Structure: Pattern-Based + Company-Tagged Roadmap (300 Problems)
 🔹 1. Basic Foundations (40 Problems)
 
     Arrays (Easy–Medium)
@@ -63,3 +63,262 @@
 
     DP on LIS/Partitions/Palindromes
 
+
+
+
+I'll create Java code to rearrange an array so that positive and negative numbers are separated at specific indices.
+
+import java.util.*;
+
+public class ArrayRearrangement {
+
+    // Method 1: Separate positive and negative numbers (order doesn't matter)
+    public static void separatePositiveNegative(int[] arr) {
+        int left = 0, right = arr.length - 1;
+
+        while (left < right) {
+            // Move left pointer to find negative number
+            while (left < right && arr[left] >= 0) {
+                left++;
+            }
+
+            // Move right pointer to find positive number
+            while (left < right && arr[right] < 0) {
+                right--;
+            }
+
+            // Swap negative (at left) with positive (at right)
+            if (left < right) {
+                swap(arr, left, right);
+            }
+        }
+    }
+
+    // Method 2: Rearrange maintaining relative order (stable partition)
+    public static void rearrangeStable(int[] arr) {
+        List<Integer> negatives = new ArrayList<>();
+        List<Integer> positives = new ArrayList<>();
+
+        // Separate into two lists maintaining order
+        for (int num : arr) {
+            if (num < 0) {
+                negatives.add(num);
+            } else {
+                positives.add(num);
+            }
+        }
+
+        // Copy back to original array (negatives first, then positives)
+        int index = 0;
+        for (int neg : negatives) {
+            arr[index++] = neg;
+        }
+        for (int pos : positives) {
+            arr[index++] = pos;
+        }
+    }
+
+    // Method 3: Alternate positive and negative numbers
+    public static void alternatePositiveNegative(int[] arr) {
+        // First separate positive and negative
+        separatePositiveNegative(arr);
+
+        // Find the boundary between negative and positive
+        int negEnd = 0;
+        while (negEnd < arr.length && arr[negEnd] < 0) {
+            negEnd++;
+        }
+
+        // Alternate placement starting from index 0
+        int posIndex = negEnd;
+        int negIndex = 1;  // Start placing negatives at odd indices
+
+        // Place negatives at odd positions, positives at even positions
+        while (negIndex < arr.length && posIndex < arr.length) {
+            swap(arr, negIndex, posIndex);
+            negIndex += 2;
+            posIndex++;
+        }
+    }
+
+    // Method 4: Rearrange with specific pattern (all negatives first, then positives)
+    public static int partitionArray(int[] arr) {
+        int writeIndex = 0;
+
+        // Move all negative numbers to the beginning
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                swap(arr, i, writeIndex);
+                writeIndex++;
+            }
+        }
+
+        return writeIndex; // Returns the index where positive numbers start
+    }
+
+    // Method 5: Rearrange using Dutch National Flag approach (3-way partition)
+    public static void dutchFlagPartition(int[] arr) {
+        int low = 0, mid = 0, high = arr.length - 1;
+
+        while (mid <= high) {
+            if (arr[mid] < 0) {
+                swap(arr, low, mid);
+                low++;
+                mid++;
+            } else if (arr[mid] == 0) {
+                mid++;
+            } else { // arr[mid] > 0
+                swap(arr, mid, high);
+                high--;
+                // Don't increment mid here as we need to check the swapped element
+            }
+        }
+    }
+
+    // Method 6: Rearrange to specific positions based on indices
+    public static void rearrangeByIndices(int[] arr, int[] indices) {
+        if (arr.length != indices.length) {
+            System.out.println("Array and indices must have same length");
+            return;
+        }
+
+        int[] temp = new int[arr.length];
+
+        // Place elements according to given indices
+        for (int i = 0; i < arr.length; i++) {
+            if (indices[i] >= 0 && indices[i] < arr.length) {
+                temp[indices[i]] = arr[i];
+            }
+        }
+
+        // Copy back to original array
+        System.arraycopy(temp, 0, arr, 0, arr.length);
+    }
+
+    // Method 7: Move all negatives to end
+    public static void moveNegativesToEnd(int[] arr) {
+        int writeIndex = 0;
+
+        // Move all positive numbers to the beginning
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) {
+                arr[writeIndex] = arr[i];
+                if (writeIndex != i) {
+                    arr[i] = 0; // Optional: mark moved positions
+                }
+                writeIndex++;
+            }
+        }
+
+        // Fill remaining positions with negatives
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0 && i < writeIndex) {
+                // Find next position to place negative
+                for (int j = writeIndex; j < arr.length; j++) {
+                    if (arr[j] <= 0) {
+                        arr[j] = arr[i];
+                        arr[i] = 0;
+                        writeIndex = j + 1;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    // Utility method to swap elements
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    // Utility method to print array
+    public static void printArray(int[] arr, String message) {
+        System.out.println(message + ": " + Arrays.toString(arr));
+    }
+
+    // Method to create a copy of array for testing
+    public static int[] copyArray(int[] original) {
+        return Arrays.copyOf(original, original.length);
+    }
+
+    public static void main(String[] args) {
+        // Test array with positive and negative numbers
+        int[] original = {-1, 2, -3, 4, 5, -6, -7, 8, 9, -10};
+
+        System.out.println("=== Original Array ===");
+        printArray(original, "Original");
+
+        // Method 1: Simple separation
+        System.out.println("\n=== Method 1: Simple Separation ===");
+        int[] arr1 = copyArray(original);
+        separatePositiveNegative(arr1);
+        printArray(arr1, "After separation (order may change)");
+
+        // Method 2: Stable rearrangement
+        System.out.println("\n=== Method 2: Stable Rearrangement ===");
+        int[] arr2 = copyArray(original);
+        rearrangeStable(arr2);
+        printArray(arr2, "Negatives first, maintaining relative order");
+
+        // Method 3: Alternate positive and negative
+        System.out.println("\n=== Method 3: Alternating Pattern ===");
+        int[] arr3 = copyArray(original);
+        alternatePositiveNegative(arr3);
+        printArray(arr3, "Alternating positive and negative");
+
+        // Method 4: Partition with boundary
+        System.out.println("\n=== Method 4: Partition Array ===");
+        int[] arr4 = copyArray(original);
+        int boundary = partitionArray(arr4);
+        printArray(arr4, "Partitioned (boundary at index " + boundary + ")");
+
+        // Method 5: Dutch National Flag
+        System.out.println("\n=== Method 5: Dutch Flag Partition ===");
+        int[] arr5 = {-1, 0, 2, -3, 0, 4, -5, 0, 6};
+        printArray(arr5, "Before (with zeros)");
+        dutchFlagPartition(arr5);
+        printArray(arr5, "After Dutch flag partition (neg, zero, pos)");
+
+        // Method 6: Rearrange by specific indices
+        System.out.println("\n=== Method 6: Rearrange by Indices ===");
+        int[] arr6 = {10, 20, 30, 40, 50};
+        int[] indices = {3, 0, 4, 1, 2};
+        printArray(arr6, "Before rearrangement by indices");
+        printArray(indices, "Target indices");
+        rearrangeByIndices(arr6, indices);
+        printArray(arr6, "After rearrangement");
+
+        // Method 7: Move negatives to end
+        System.out.println("\n=== Method 7: Move Negatives to End ===");
+        int[] arr7 = copyArray(original);
+        printArray(arr7, "Before moving negatives to end");
+        moveNegativesToEnd(arr7);
+        printArray(arr7, "After moving negatives to end");
+
+        // Performance comparison
+        System.out.println("\n=== Performance Test ===");
+        int[] largeArray = generateRandomArray(100000);
+
+        long startTime = System.nanoTime();
+        separatePositiveNegative(copyArray(largeArray));
+        long endTime = System.nanoTime();
+        System.out.println("Simple separation: " + (endTime - startTime) / 1000000.0 + " ms");
+
+        startTime = System.nanoTime();
+        rearrangeStable(copyArray(largeArray));
+        endTime = System.nanoTime();
+        System.out.println("Stable rearrangement: " + (endTime - startTime) / 1000000.0 + " ms");
+    }
+
+    // Utility method to generate random array for testing
+    public static int[] generateRandomArray(int size) {
+        Random random = new Random();
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = random.nextInt(2001) - 1000; // Random numbers between -1000 and 1000
+        }
+        return arr;
+    }
+}
